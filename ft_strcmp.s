@@ -20,5 +20,11 @@ compare:
 return:
 		movzx		rax, al				; we use movzx to move the character in the 8-bit register al to a 64-bit register, rax, so that we can calculate with them.
 		movzx		rcx, cl				; the same as above but for cl into a different 64-bit register
+		cmp			rax, rcx
+		je			retzero
 		sub			rax, rcx			; subtract rcx from rax so we can get the difference, resulting in our return value
+		ret
+
+retzero:
+		mov			rax, 0
 		ret

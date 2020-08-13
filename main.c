@@ -14,8 +14,14 @@
 
 int			main(void)
 {
-	char *s1 = "aab";
-	char *s2 = "aaa";
-	printf("strcmp 'aab' - 'aaa' = %i\n", ft_strcmp(s1, s2));
+	printf("***Test 1: ft_strcmp***\n")
+	printf("ft_strcmp 'aab' : 'aaa' = %i\n", ft_strcmp("aab", "aaa"));
+	printf("ft_strcmp 'aaa' : 'aab' = %i\n", ft_strcmp("aaa", "aab"));
+	printf("ft_strcmp 'aaa' : 'aaaa' = %i\n", ft_strcmp("aaa", "aaaa"));
+	printf("ft_strcmp 'aaa' : '' = %i\n", ft_strcmp("aaa", ""));
+	printf("ft_strcmp 'aaa' : 'aaa' = %i\n", ft_strcmp("aaa", "aaa"));
+	printf("***Test 2: ft_strlen***\n")
+
+
 	return (0);
 }
