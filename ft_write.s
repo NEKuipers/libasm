@@ -10,7 +10,7 @@ _ft_write:
 		cmp		rdx, 0
 		je		error
 
-		mov		rax, 0x20000004
+		mov		rax, 0x2000004
 		syscall
 		ret
 
