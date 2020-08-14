@@ -16,11 +16,11 @@
 int			main(void)
 {
 	printf("***Test 1: ft_strcmp***\n");
-	printf("ft_strcmp 'aab' : 'aaa' = %i | strcmp 'aab' : 'aaa' = %i\n", ft_strcmp("aab", "aaa"), strcmp("aab", "aaa"));
-	printf("ft_strcmp 'aaa' : 'aab' = %i | strcmp 'aaa' : 'aab' = %i\n", ft_strcmp("aaa", "aab"), strcmp("aaa", "aab"));
-	printf("ft_strcmp 'aaa' : 'aaaa' = %i | strcmp 'aaa' : 'aaaa' = %i\n", ft_strcmp("aaa", "aaaa"), strcmp("aaa", "aaaa"));
-	printf("ft_strcmp 'aaa' : '' = %i | strcmp 'aaa' : '' = %i\n", ft_strcmp("aaa", ""), strcmp("aaa", ""));
-	printf("ft_strcmp 'aaa' : 'aaa' = %i | strcmp 'aaa' : 'aaa' = %i\n", ft_strcmp("aaa", "aaa"), strcmp("aaa", "aaa"));
+	printf("ft_strcmp 'aab' : 'aaa' = %i\n", ft_strcmp("aab", "aaa"));
+	printf("ft_strcmp 'aaa' : 'aab' = %i\n", ft_strcmp("aaa", "aab"))
+	printf("ft_strcmp 'aaa' : 'aaaa' = %i\n", ft_strcmp("aaa", "aaaa"));
+	printf("ft_strcmp 'aaa' : '' = %i\n", ft_strcmp("aaa", ""));
+	printf("ft_strcmp 'aaa' : 'aaa' = %i\n", ft_strcmp("aaa", "aaa"));
 	printf("***Test 2: ft_strlen***\n");
 	printf("ft_strlen '' = %i | strlen '' = %i\n", ft_strlen(""), strlen(""));
 	printf("ft_strlen 'Test' = %i | strlen 'Test' = %i\n", ft_strlen("Test"), strlen("Test"));
@@ -34,14 +34,14 @@ int			main(void)
 	printf("%s\n", c);
 	printf("%s\n", ft_strcpy(c, d));
 	printf("%s\n", c);
-	printf("***Test 5: ft_read***\n");
+	printf("***Test 5: ft_strdup***\n");
+	char *test = ft_strdup("Testing");
+	printf("%s\n", test);
+	free(test);
+	printf("***Test 6: ft_read***\n");
 	char a[32];
 	int ret = ft_read(0, a, 2);
 	a[ret] = 0;
 	printf("%s\n", a);
-	printf("***Test 6: ft_strdup***\n");
-	char *test = ft_strdup("Testing");
-	printf("%s\n", test);
-	free(test);
 	return (0);
 }
