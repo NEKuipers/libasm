@@ -6,7 +6,7 @@
 /*   By: nkuipers <nkuipers@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/07/23 12:02:15 by nkuipers      #+#    #+#                 */
-/*   Updated: 2020/08/14 09:33:10 by nkuipers      ########   odam.nl         */
+/*   Updated: 2020/08/14 10:26:47 by nkuipers      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,15 +17,15 @@ int			main(void)
 {
 	printf("***Test 1: ft_strcmp***\n");
 	printf("ft_strcmp 'aab' : 'aaa' = %i\n", ft_strcmp("aab", "aaa"));
-	printf("ft_strcmp 'aaa' : 'aab' = %i\n", ft_strcmp("aaa", "aab"))
+	printf("ft_strcmp 'aaa' : 'aab' = %i\n", ft_strcmp("aaa", "aab"));
 	printf("ft_strcmp 'aaa' : 'aaaa' = %i\n", ft_strcmp("aaa", "aaaa"));
 	printf("ft_strcmp 'aaa' : '' = %i\n", ft_strcmp("aaa", ""));
 	printf("ft_strcmp 'aaa' : 'aaa' = %i\n", ft_strcmp("aaa", "aaa"));
 	printf("***Test 2: ft_strlen***\n");
-	printf("ft_strlen '' = %i | strlen '' = %i\n", ft_strlen(""), strlen(""));
-	printf("ft_strlen 'Test' = %i | strlen 'Test' = %i\n", ft_strlen("Test"), strlen("Test"));
-	printf("ft_strlen 'Testing testing  ' = %i | strlen 'Testing testing  ' = %i\n", ft_strlen("Testing testing  "), strlen("Testing testing  "));
-	printf("ft_strlen 'abcdefghijklmnopqrstuvwxyz' = %i | strlen 'abcdefghijklmnopqrstuvwxyz' = %i\n", ft_strlen("abcdefghijklmnopqrstuvwxyz"), strlen("abcdefghijklmnopqrstuvwxyz"));
+	printf("ft_strlen '' = %zu | strlen '' = %lu\n", ft_strlen(""), strlen(""));
+	printf("ft_strlen 'Test' = %zu | strlen 'Test' = %lu\n", ft_strlen("Test"), strlen("Test"));
+	printf("ft_strlen 'Testing testing  ' = %zu | strlen 'Testing testing  ' = %lu\n", ft_strlen("Testing testing  "), strlen("Testing testing  "));
+	printf("ft_strlen 'abcdefghijklmnopqrstuvwxyz' = %zu | strlen 'abcdefghijklmnopqrstuvwxyz' = %lu\n", ft_strlen("abcdefghijklmnopqrstuvwxyz"), strlen("abcdefghijklmnopqrstuvwxyz"));
 	printf("***Test 3: ft_write***\n");
 	ft_write(1,"All good!", 9);
 	printf("***Test 4: ft_strcpy***\n");
