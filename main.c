@@ -6,7 +6,7 @@
 /*   By: nkuipers <nkuipers@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/07/23 12:02:15 by nkuipers      #+#    #+#                 */
-/*   Updated: 2020/08/14 15:28:17 by nkuipers      ########   odam.nl         */
+/*   Updated: 2020/08/14 15:36:57 by nkuipers      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,14 +30,14 @@ int			main(void)
 	printf("ft_strlen 'abcdefghijklmnopqrstuvwxyz' = %zu | strlen 'abcdefghijklmnopqrstuvwxyz' = %lu\n", ft_strlen("abcdefghijklmnopqrstuvwxyz"), strlen("abcdefghijklmnopqrstuvwxyz"));
 
 	printf("***Test 3: ft_strcpy***\n");
-	char c[5] = "test";
-	char *d = "good";
+	char c[8] = "testing";
+	char *d = "This works";
 	printf("%s\n", c);
 	printf("%s\n", ft_strcpy(c, d));
 	printf("%s\n", c);
 
 	printf("***Test 4: ft_strdup***\n");
-	char *test = ft_strdup("Testing");
+	char *test = ft_strdup("Testing... everything seems to be in order.");
 	printf("%s\n", test);
 	free(test);
 
