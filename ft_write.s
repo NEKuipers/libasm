@@ -1,5 +1,5 @@
-section .text:
-		global _ft_write
+
+global _ft_write
 
 ; int ft_write(int rdi, const void *rsi, size_t rdx) (rdi = fd, rsi = buffer, rdx = size)
 _ft_write:

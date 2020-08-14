@@ -1,5 +1,5 @@
-section .text:
-		global _ft_strlen
+
+global _ft_strlen
 
 _ft_strlen:
 		mov			rax, -1				; rax is normally the return value in asm. we're initializing it with value -1, in C this would be int i = -1

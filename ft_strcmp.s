@@ -1,5 +1,5 @@
-section .text:
-		global _ft_strcmp
+
+global _ft_strcmp
 
 _ft_strcmp:
 		mov			rax, 0				; int ret = 0, this will be our return value

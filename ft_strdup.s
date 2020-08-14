@@ -2,8 +2,7 @@ extern _ft_strlen
 extern _ft_strcpy
 extern _malloc
 
-section .text:
-		global _ft_strdup
+global _ft_strdup
 
 _ft_strdup:
 		push rdi         ; save rdi because it will be overwrite for malloc
