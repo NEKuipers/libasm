@@ -2,6 +2,6 @@
 global _ft_read
 
 _ft_read:
-        mov     rax, 0x20000003
+        mov     rax, 0x2000003
         syscall
         ret
