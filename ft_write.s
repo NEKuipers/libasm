@@ -24,6 +24,7 @@ errno:
 		call	___error
 		mov		[rax], rbx
 		pop		rbx
+		mov		rax, -1
 		ret
 
 error:		
