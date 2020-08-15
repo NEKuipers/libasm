@@ -6,7 +6,7 @@
 /*   By: nkuipers <nkuipers@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/07/23 12:46:01 by nkuipers      #+#    #+#                 */
-/*   Updated: 2020/08/14 09:49:17 by nkuipers      ########   odam.nl         */
+/*   Updated: 2020/08/15 09:53:00 by nkuipers      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <stdio.h>
+# include <fcntl.h>
 # include <string.h>
 
 int					ft_strcmp(const char *s1, const char *s2);

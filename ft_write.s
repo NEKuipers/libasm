@@ -1,8 +1,8 @@
 
 global _ft_write
 
-; int ft_write(int rdi, const void *rsi, size_t rdx) (rdi = fd, rsi = buffer, rdx = size)
-_ft_write:
+
+_ft_write:							; int ft_write(int rdi, const void *rsi, size_t rdx) (rdi = fd, rsi = buffer, rdx = size)
 		test	rdi, rdi 			; test does a bitwise AND operation. In practice, this means the same as 'if (rdi == 0)' in C.
 		je		write_size_zero		; if the fd is zero, return zero.
 		cmp		rsi, 0				; check if the buffer is zero.
