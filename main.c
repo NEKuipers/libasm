@@ -6,7 +6,7 @@
 /*   By: nkuipers <nkuipers@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/07/23 12:02:15 by nkuipers      #+#    #+#                 */
-/*   Updated: 2020/08/15 10:35:42 by nkuipers      ########   odam.nl         */
+/*   Updated: 2020/08/15 10:43:13 by nkuipers      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,21 +22,25 @@ void clear_buffer(char *buffer, int size)
 int			main(void)
 {	
 
+	char s1[] = "Hello World !";
+	char s2[] = "Hello Nick !";
+	char s3[] = "Hello World!";
+	char s4[] = "";
 	printf("\033[1;36m***Test 1: ft_strcmp***\n\033[0m");
-	printf("%-20s: \"%s\"\n", "string1:", "Hello World !");
-	printf("%-20s: \"%s\"\n", "string2:", "Hello Nick !");
-	printf("%-20s: \"%d\"\n", "strcmp:", strcmp("Hello World !", "Hello Nick !"));
-	printf("%-20s: \"%d\"\n", "ft_strcmp:", ft_strcmp("Hello World !", "Hello Nick !"));
+	printf("%-20s: \"%s\"\n", "string1:", s1);
+	printf("%-20s: \"%s\"\n", "string2:", s2);
+	printf("%-20s: \"%d\"\n", "strcmp:", strcmp(s1, s2));
+	printf("%-20s: \"%d\"\n", "ft_strcmp:", ft_strcmp(s1, s2));
 	printf("\n");
-	printf("%-20s: \"%s\"\n", "string1:", "Hello World!");
-	printf("%-20s: \"%s\"\n", "string2:", "Hello World !");
-	printf("%-20s: \"%d\"\n", "strcmp:", strcmp("Hello World", "Hello World !"));
-	printf("%-20s: \"%d\"\n", "ft_strcmp:", ft_strcmp("Hello World", "Hello World !"));
+	printf("%-20s: \"%s\"\n", "string1:", s1);
+	printf("%-20s: \"%s\"\n", "string2:", s3);
+	printf("%-20s: \"%d\"\n", "strcmp:", strcmp(s1, s3));
+	printf("%-20s: \"%d\"\n", "ft_strcmp:", ft_strcmp(s1, s3));
 	printf("\n");
-	printf("%-20s: \"%s\"\n", "string1:", "Hello World");
-	printf("%-20s: \"%s\"\n", "string2:", "");
-	printf("%-20s: \"%d\"\n", "strcmp:", strcmp("Hello World", ""));
-	printf("%-20s: \"%d\"\n", "ft_strcmp:", ft_strcmp("Hello World", ""));
+	printf("%-20s: \"%s\"\n", "string1:", s3);
+	printf("%-20s: \"%s\"\n", "string2:", s4);
+	printf("%-20s: \"%d\"\n", "strcmp:", strcmp(s3, s4));
+	printf("%-20s: \"%d\"\n", "ft_strcmp:", ft_strcmp(s3, s4));
 	printf("\n");
 
 	printf("\033[1;36m***Test 2: ft_strlen***\n\033[0m");
